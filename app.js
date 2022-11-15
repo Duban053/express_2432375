@@ -1,7 +1,9 @@
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
-const port = 8282
+const port = process.env.PORT //Definir el puerto 
 
 app.use(express.static('public'))
 
